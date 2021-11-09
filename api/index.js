@@ -50,9 +50,9 @@ module.exports = async (req, res) => {
   try {
     stats = await fetchStats(
       username,
+      parseArray(role),
       parseBoolean(count_private),
       parseBoolean(include_all_commits),
-      parseArray(role),
     );
 
     const cacheSeconds = clampValue(
