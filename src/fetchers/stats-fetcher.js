@@ -92,7 +92,6 @@ async function fetchStats(
   ownerAffiliations,
   count_private = false,
   include_all_commits = false,
-  ownerAffiliations,
 ) {
   if (!username) throw Error("Invalid username");
 
