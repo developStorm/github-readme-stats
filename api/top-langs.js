@@ -47,6 +47,7 @@ module.exports = async (req, res) => {
       username,
       parseArray(role),
       parseArray(exclude_repo),
+      parseArray(role),
       parseArray(hide),
     );
 

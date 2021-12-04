@@ -51,6 +51,7 @@ module.exports = async (req, res) => {
       parseArray(role),
       parseBoolean(count_private),
       parseBoolean(include_all_commits),
+      parseArray(role),
     );
 
     const cacheSeconds = clampValue(
